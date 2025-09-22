@@ -44,6 +44,10 @@ const connect = async()=>{
     })
   });
 
+  app.get("/",(req,res)=>{
+    res.send("Booking API is live")
+  })
+
 
   app.listen(6200, () => {
     connect();
